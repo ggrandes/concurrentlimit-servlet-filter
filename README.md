@@ -2,7 +2,7 @@
 
 Provides concurrent control in a Servlet container like Tomcat. Open Source Java project under Apache License v2.0
 
-### Current Development Version is [1.0.0](https://search.maven.org/#search|ga|1|g%3Aorg.javastack%20a%3Aconcurrentlimit-servlet-filter)
+### Current Development Version is [2.0.0](https://search.maven.org/#search|ga|1|g%3Aorg.javastack%20a%3Aconcurrentlimit-servlet-filter-jakarta)
 
 ---
 
@@ -50,6 +50,16 @@ This filter works limiting access for specified URI.
 ## MAVEN
 
 Add the dependency to your pom.xml:
+
+###### jakarta.servlet (tomcat 10+)
+
+    <dependency>
+        <groupId>org.javastack</groupId>
+        <artifactId>concurrentlimit-servlet-filter-jakarta</artifactId>
+        <version>2.0.0</version>
+    </dependency>
+
+###### javax.servlet (tomcat 8.5, 9)
 
     <dependency>
         <groupId>org.javastack</groupId>
